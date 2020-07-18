@@ -1,0 +1,134 @@
+<head>
+    <!--title-->
+    <title>Gallery</title>	
+    <meta name="generator" content="New-Star">
+	<meta name="keywords" content="New-Star">
+	<meta name="description" content="New-Star gallery">
+    <!--favicon-->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <!--content-type-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/my_bootstrap.css">
+    <!--bootstrap requirements-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--bootstrap adaptation to the device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--bootstrap carousel-->
+    <script>
+        $(function() {
+            $('.carousel').each(function(){
+                $(this).carousel({
+                    interval: false
+                });
+            });
+        });
+    </script>
+    <script>
+        $(function() {
+            $(".gallery").fancybox();
+        });
+    </script>
+    <!--fancybox-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md  fixed-top bg-dark navbar-dark">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#">New-Star</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExample07XL">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#game" target="_blank">Gallery Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login" target="_blank">Gallery Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#admin" target="_blank">Gallery Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#install" target="_blank">Gallery Install</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main role="main" class="container">
+        <div class="card mb-3">
+            <h5 class="card-header">Gallery Game</h5>
+            <div class="card-body">
+                <div class="row" id="game"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let game = document.getElementById("game"),
+            s_game = "";
+        for (let i = 1; i <= 16; ++i) {
+            s_game += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/game/${i}.png" target="_blank" rel="gallery"><img src="images/game/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
+        }
+        game.innerHTML = s_game;
+    </script>
+    <main role="main" class="container">
+        <div class="card mb-3">
+            <h5 class="card-header">Gallery Login</h5>
+            <div class="card-body">
+                <div class="row" id="login"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let login = document.getElementById("login"),
+            s_login = "";
+        for (let i = 1; i <= 5; ++i) {
+            s_login += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/login/${i}.png" target="_blank" rel="gallery"><img src="images/login/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
+        }
+        login.innerHTML = s_login;
+    </script>
+    <main role="main" class="container">
+        <div class="card mb-3">
+            <h5 class="card-header">Gallery Admin</h5>
+            <div class="card-body">
+                <div class="row" id="admin"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let admin = document.getElementById("admin"),
+            s_admin = "";
+        for (let i = 1; i <= 26; ++i) {
+            s_admin += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/admin/${i}.png" target="_blank" rel="gallery"><img src="images/admin/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
+        }
+        admin.innerHTML = s_admin;
+    </script>
+    <main role="main" class="container">
+        <div class="card mb-3">
+            <h5 class="card-header">Gallery Install</h5>
+            <div class="card-body">
+                <div class="row" id="install"></div>
+            </div>
+        </div>
+    </main>
+    <script>
+        let install = document.getElementById("install"),
+            s_install = "";
+        for (let i = 1; i <= 5; ++i) {
+            s_install += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/install/${i}.png" target="_blank" rel="gallery"><img src="images/install/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
+        }
+        install.innerHTML = s_install;
+    </script>
+    <footer>
+        <div class="container">
+            <p class="float-right"><a href="#">Back up</a></p>
+            <p>© 2020 New-Star, <a href="https://github.com/Yaro2709/New-Star">github</a></p>
+        </div>
+    </footer>
+</body>
