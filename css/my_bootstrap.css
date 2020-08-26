@@ -1,12 +1,14 @@
+/*globals*/
 body {
     background: #0B0B0F;
     color: #fff;
     position: relative;
-    background: url(../images/bg.jpg) no-repeat fixed center center #0d0d0d;
+    background: linear-gradient( rgb(0 0 0 / 80%), rgba(0, 0, 0, 0.5) ), url(../images/bg.jpg) no-repeat fixed center center #0d0d0d;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    o-background-size: cover;
     background-size: cover;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 /*scrollbar*/
 ::-webkit-scrollbar{
@@ -25,88 +27,94 @@ body {
 ::-webkit-scrollbar-corner {
 	display:none;
 }
-
-body {
-    padding-top: 4.5rem;
-}
-.jumbotron {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    margin-bottom: 0rem;
-}
-.bg-dark {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-}
-.table {
-    margin-bottom: 0rem; 
-}
-.table-dark {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-.table-dark th, .table-dark td, .table-dark thead th {
-    border-color: rgb(40, 43, 49);
-}
-.card {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-.card-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-bottom: 1px solid rgba(250, 250, 250, 0.15);
-}
-.card-footer {
-    padding: 0.5rem 1.25rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-top: 1px solid rgba(250, 250, 250, 0.15);
-}
-.form-control {
-    color: #f2f2f2;
-    background-color: rgba(15, 15, 15, 0.5);
-    border: 1px solid #333333;
-}
-.form-control:focus {
-  color: #f2f2f2;
-  border-color: rgba(99,83,83,0.8);
-  background-color: rgba(41, 41, 41, 0.5);
-    
-}
+/*links*/
 a {
-  color: #9E9E9E;
-  text-decoration: none;
+    color: rgb(255 255 255 / 0.5);
+    text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #607D8B;
-  text-decoration: underline;
+    color: rgb(255 255 255 / 0.9);
+    text-decoration: none;
 }
 a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
-.dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.65);
+/*custom default button*/
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none; 
+    background-color: #fff;
+    border: .05rem solid #fff;
 }
-.dropdown-item {
-  color: rgba(255, 255, 255, 0.65);
+/*base structure*/
+.cover-container {
+    max-width: 42em;
 }
-.dropdown-item:hover, .dropdown-item:focus {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #000001;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-.btn-secondary {
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+/*header*/
+.masthead {
+    margin-bottom: 2rem;
+}
+.masthead-brand {
+    margin-bottom: 0;
+}
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+.nav-masthead .active {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-color: #282b31;
+    border-bottom-color: #fff;
 }
-.btn-secondary:hover {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.0);
-  border-color: #7d94c1;
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+    .nav-masthead {
+        float: right;
+    }
 }
-.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: rgb(0, 0, 0);
-    border-color: #7d94c1;
+/*cover*/
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+/*footer*/
+.mastfoot {
+    color: rgba(255, 255, 255, 0.9);
+}
+/*icon*/
+.icon-inner {
+    font-size: 45px;
+    margin-bottom: 5px;
 }

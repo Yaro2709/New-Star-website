@@ -1,3 +1,3 @@
-# Gallery New-Star
+# Website New-Star
 
-The gallery is the official gallery of the [New-Star](https://github.com/Yaro2709/New-Star) project. Go to the [gallery](https://yaro2709.github.io/New-Star-gallery/) view.
+The website is the official website of the [New-Star](https://github.com/Yaro2709/New-Star) project. Go to the [website](https://yaro2709.github.io/New-Star-website/) view.
