@@ -39,7 +39,10 @@
 <body>
     <nav class="navbar navbar-expand-md  fixed-top bg-dark navbar-dark">
         <div class="container-xl">
-            <a class="navbar-brand" href="#">New-Star</a>
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">
+                <img src="./images/192.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                New-Star
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,7 +75,7 @@
     <script>
         let game = document.getElementById("game"),
             s_game = "";
-        for (let i = 1; i <= 16; ++i) {
+        for (let i = 1; i <= 31; ++i) {
             s_game += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/game/${i}.png" target="_blank" rel="gallery"><img src="images/game/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
         }
         game.innerHTML = s_game;
@@ -88,7 +91,7 @@
     <script>
         let login = document.getElementById("login"),
             s_login = "";
-        for (let i = 1; i <= 5; ++i) {
+        for (let i = 1; i <= 3; ++i) {
             s_login += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/login/${i}.png" target="_blank" rel="gallery"><img src="images/login/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
         }
         login.innerHTML = s_login;
@@ -104,7 +107,7 @@
     <script>
         let admin = document.getElementById("admin"),
             s_admin = "";
-        for (let i = 1; i <= 26; ++i) {
+        for (let i = 1; i <= 18; ++i) {
             s_admin += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/admin/${i}.png" target="_blank" rel="gallery"><img src="images/admin/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
         }
         admin.innerHTML = s_admin;
@@ -120,7 +123,7 @@
     <script>
         let install = document.getElementById("install"),
             s_install = "";
-        for (let i = 1; i <= 5; ++i) {
+        for (let i = 1; i <= 6; ++i) {
             s_install += `<div class="col-lg-2 mb-3"><a class="gallery" href="images/install/${i}.png" target="_blank" rel="gallery"><img src="images/install/${i}.png" alt="" width="120" height="120" class="img-thumbnail bg-primary border-primary"></a></div>`;
         }
         install.innerHTML = s_install;
